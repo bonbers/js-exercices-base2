@@ -12,5 +12,33 @@
       <img src="images/image4.jpg" id="image4" />
       <img src="images/image5.jpg" id="image5" />
     </div>
+
+    <script>
+
+    var logo = document.getElementsByTagName('img');
+
+    for (i=0; i<logo.length; i++){
+
+    logo[i].onmouseover = function(){
+      var source = this.getAttribute('src');
+      var src2 = source.replace(".jpg", "_2.jpg");
+      if ( source.includes("_2")===false) {
+      this.setAttribute("src", src2); }
+    };
+
+};
+
+        // document.getElementById("image1").onmouseover = function() {mouseOver()};
+        // document.getElementById("image1").onmouseout = function() {mouseOut()};
+        //
+        // function mouseOver() {
+        //     document.getElementById("image1").src = "./images/image1.jpg";
+        // }
+        //
+        // function mouseOut() {
+        //     document.getElementById("image1").src = "./images/image2.jpg";
+        // }
+
+    </script>
   </body>
 </html>

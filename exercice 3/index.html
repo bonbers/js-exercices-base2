@@ -8,5 +8,16 @@
   <form>
     <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" />
   </form>
+
+  <script>
+
+  document.getElementById("nom").onkeypress = function() {myFunction()};
+
+  function myFunction() {
+    var nom = document.getElementById("nom").value;
+            alert(nom);
+  }
+
+  </script>
 </body>
 </html>
